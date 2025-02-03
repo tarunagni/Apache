@@ -1,6 +1,6 @@
 #!/bin/bash
 
-configure_path=/home/$USER/reverse-proxy
+configure_path=/opt/apache
 
 # URL for Apache HTTPD setup
 # Function to extract the latest version from the Apache HTTP Server download page
