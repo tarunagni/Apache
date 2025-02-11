@@ -1,0 +1,18 @@
+name: Test GitHub Actions on EC2
+
+on:
+  push:
+    branches:
+      - main  # Runs when changes are pushed to the main branch
+
+jobs:
+  deploy:
+    runs-on: self-hosted  # This tells GitHub to run on your EC2 instance
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Pull Latest Code to EC2
+        run: |
+          cd /home/ubuntu/my-repo  # Change this to your actual directory where you cloned the repo
+          git pull origin main
