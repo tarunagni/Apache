@@ -14,5 +14,5 @@ jobs:
 
       - name: Pull Latest Code to EC2
         run: |
-          cd /home/ubuntu/my-repo  # Change this to your actual directory where you cloned the repo
+          cd /home/ubuntu/GitHub_Repo/Apache  # Change this to your actual directory where you cloned the repo
           git pull origin main
